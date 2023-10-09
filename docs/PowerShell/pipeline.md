@@ -444,9 +444,9 @@ If you've managed to read this whole thing, well done. If you give me the highli
 
 [$_ Variable]
 [variable]: https://kasmichta.github.io/hjkl/docs/PowerShell/variables.html
-[.gettype() method]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures/#get-type
-[array]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures/#arrays
+[.gettype() method]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html#get-type
+[array]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html#arrays
 [Where-Object]: https://kasmichta.github.io/hjkl/docs/PowerShell/where-object.html
-[syntax of Get-Help]: https://kasmichta.github.io/hjkl/docs/PowerShell/get-help/#syntax
-["equivalent"]: https://kasmichta.github.io/hjkl/docs/PowerShell/pipeline/#explicit
+[syntax of Get-Help]: https://kasmichta.github.io/hjkl/docs/PowerShell/get-help.html#syntax
+["equivalent"]: https://kasmichta.github.io/hjkl/docs/PowerShell/pipeline.html#explicit
 [if statement]: https://kasmichta.github.io/hjkl/docs/PowerShell/if-else.html
