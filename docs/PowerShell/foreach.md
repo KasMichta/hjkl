@@ -101,6 +101,7 @@ A similar approach to the `.where()` method mentioned in [Where] there is a `.fo
 This is still very useful, but can reduce readability when writing very long lines of code. The `|` pipeline is one of the core functions of PowerShell and has more troubleshooting resources online, which is why it is often preferred.
 
 [Indexing]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html#indexing
-[The Pipeline Variable _] https://kasmichta.github.io/hjkl/docs/PowerShell/psitem.html
+[The Pipeline Variable _]: https://kasmichta.github.io/hjkl/docs/PowerShell/psitem.html
 [Where]: https://kasmichta.github.io/hjkl/docs/PowerShell/where-object.html#where
+
 

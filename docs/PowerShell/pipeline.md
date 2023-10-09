@@ -440,7 +440,6 @@ The first will send each process to `Get-Member`, and will collect properties fo
 The second method where we provide `(Get-Process)` as an explicit input object, look at the very top of the results: `TypeName: System.Object[]`.
 Due to no pipeline, we are giving the whole array at once, hence the `Object[]` (Object Array) TypeName. So we are not gathering the nitty-gritty properties and methods for the process objects inside the list. We are getting the properties and methods **of the list itself**. Hopefully that makes sense, because I'm not doing another visual exercise for this one.
 
-If you've managed to read this whole thing, well done. If you give me the highlighted words code-phrase that I've littered throughout this I will buy you a beer, or biscuits. And no you can't just find the words and get the prize, I will actually check that you've understood this.
 
 [$_ Variable]: https://kasmichta.github.io/hjkl/docs/PowerShell/psitem.html
 [$PSItem or $_]: https://kasmichta.github.io/hjkl/docs/PowerShell/psitem.html
