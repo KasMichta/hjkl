@@ -69,7 +69,7 @@ I recommend looking online why this works, I only have so much free time to writ
 
 [Comparison and Logical Operators]
 
-# Or Else
+# [](#orelse)Or Else
 
 So we can test for IF something is true, but what if it comes up false, and we want to do something **else**?
 
@@ -96,7 +96,9 @@ if ($testResults -like "*passed main check 1*") {
 	Write-Output "We're going down captain!"
 }
 ```
+However, in my personal opinion you should avoid this. If you want to your script to run a different process based on mutliple conditions, please have a look at and attempt to use switch [statements instead].
 
+[statements instead]: https://kasmichta.github.io/hjkl/docs/PowerShell/switch-statement.html
 [Data Structures]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html
-[Comparison and Logical Operators]
+[Comparison and Logical Operators] https://kasmichta.github.io/hjkl/docs/PowerShell/operators.html
 
