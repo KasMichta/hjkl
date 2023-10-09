@@ -347,4 +347,4 @@ The power of processing these types of Data Sets becomes obvious once we explain
 
 [For-Each Looping]: https://kasmichta.github.io/hjkl/docs/PowerShell/foreach.html
 [Calculated Select-Object Properties]: https://kasmichta.github.io/hjkl/docs/PowerShell/calculated-select.html
-[PSCustomObject]
+[PSCustomObject]: https://kasmichta.github.io/hjkl/docs/PowerShell/pscustomobject.html

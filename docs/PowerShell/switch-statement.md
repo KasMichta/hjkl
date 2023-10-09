@@ -118,8 +118,8 @@ If the above is not making a ton of sense, refer to the below:
 [-is determinations]
 
 [$_ Variable]: https://kasmichta.github.io/hjkl/docs/PowerShell/psitem.html
-[-is determinations]:https://kasmichta.github.io/hjkl/docs/PowerShell/operators.html#is
+[-is determinations]:https://kasmichta.github.io/hjkl/docs/PowerShell/operators.html#-is-determinations
 [IF Statements]: https://kasmichta.github.io/hjkl/docs/PowerShell/if-else.html
-[statements]: https://kasmichta.github.io/hjkl/docs/PowerShell/if-else.html#orelse
+[statements]: https://kasmichta.github.io/hjkl/docs/PowerShell/if-else.html#or-else
 [For Each Looping]: https://kasmichta.github.io/hjkl/docs/PowerShell/foreach.html
 
