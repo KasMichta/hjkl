@@ -4,6 +4,7 @@ title: Out-Null
 parent: PowerShell
 nav_order: 93
 ---
+# Out-Null
 When a command is producing output and for whatever reason you do not want this output, you can pipe into `Out-Null` which will supress output.
 
 Example:

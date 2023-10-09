@@ -100,5 +100,5 @@ However, in my personal opinion you should avoid this. If you want to your scrip
 
 [statements instead]: https://kasmichta.github.io/hjkl/docs/PowerShell/switch-statement.html
 [Data Structures]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html
-[Comparison and Logical Operators] https://kasmichta.github.io/hjkl/docs/PowerShell/operators.html
+[Comparison and Logical Operators]: https://kasmichta.github.io/hjkl/docs/PowerShell/operators.html
 
