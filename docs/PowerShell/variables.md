@@ -98,7 +98,7 @@ $variable_two = $variable_one
 
 $variable_two
 ```
-[Cmdlets]: https://kasmichta.github.io/hjkl/pages/PowerShell/cmdlets.html
-[IF Statements]: https://kasmichta.github.io/hjkl/pages/PowerShell/if-else.html
-[Data Structures]: https://kasmichta.github.io/hjkl/pages/PowerShell/data-structures.html
 
+[Cmdlets]: https://kasmichta.github.io/hjkl/docs/PowerShell/cmdlets.html
+[IF Statements]: https://kasmichta.github.io/hjkl/docs/PowerShell/if-else.html
+[Data Structures]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html

@@ -8,7 +8,7 @@ nav_order: 95
 # PSCustomObject
 This creates a custom object with properties, useful if using multiple sources of data to create a new type of record.
 
-```run-powershell
+```powershell
 $myObject = [PSCustomObject]@{
     Name     = 'Kas'
     Language = 'PowerShell'
@@ -20,7 +20,7 @@ $myObject
 
 ## Converting a Hashtable to an object
 
-```run-powershell
+```powershell
 $myHashtable = [ordered]@{
     Users    = 'Mothers'
 	State    = 'Single'

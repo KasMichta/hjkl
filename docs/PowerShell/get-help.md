@@ -247,5 +247,5 @@ Or maybe the `-credential` parameter for `Get-Item`:
 Get-Help Get-Item -parameter credential
 ```
 [Data Structures]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html
-[the stuff that's not in]: https://kasmichta.github.io/hjkl/docs/PowerShell/get-help.html#notOptional
+[the stuff that's not in]: https://kasmichta.github.io/hjkl/docs/PowerShell/get-help.html#the-stuff-thats-not-in-
 [System.String addenum]: https://kasmichta.github.io/hjkl/docs/PowerShell/system-string.html
