@@ -85,4 +85,4 @@ get-childitem C:\ | Select FullName, CreationTime, LastWriteTime
 If you want to change how the property names are displayed, their names, or even want to perform some action on the values within themselves, please refer to [Calculated Select-Object Properties]
 
 
-[Calculated Select-Object Properties]
+[Calculated Select-Object Properties]: https://kasmichta.github.io/hjkl/docs/PowerShell/calculated-select.html

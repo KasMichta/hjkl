@@ -334,7 +334,7 @@ If you remember `Get-Service` by itself gives a huge list of results, and we use
 
 The Pipe `|` sends each service from that first list, one-at-a-time. This is how `Where-Object` performs the filtering. 
 
-The output of `Get-Service` provides hundreds of services. The very first service, is then passed across the pipe as [$_ Variable|$PSItem or $_], then where-object reads the status property and checks if it matches the condition. This is why the `Where-Object` command can be written as:
+The output of `Get-Service` provides hundreds of services. The very first service, is then passed across the pipe as [$PSItem or $_], then where-object reads the status property and checks if it matches the condition. This is why the `Where-Object` command can be written as:
 
 ```powershell
 Get-Service | Where-Object {$_.Status -eq "Running"}
@@ -442,7 +442,8 @@ Due to no pipeline, we are giving the whole array at once, hence the `Object[]` 
 
 If you've managed to read this whole thing, well done. If you give me the highlighted words code-phrase that I've littered throughout this I will buy you a beer, or biscuits. And no you can't just find the words and get the prize, I will actually check that you've understood this.
 
-[$_ Variable]
+[$_ Variable]: https://kasmichta.github.io/hjkl/docs/PowerShell/psitem.html
+[$PSItem or $_]: https://kasmichta.github.io/hjkl/docs/PowerShell/psitem.html
 [variable]: https://kasmichta.github.io/hjkl/docs/PowerShell/variables.html
 [.gettype() method]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html#get-type
 [array]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html#arrays

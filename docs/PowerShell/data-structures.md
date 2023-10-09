@@ -166,7 +166,7 @@ Let's say we're doing this over and over and over, well we're reading the same a
 
 So let's look at a slightly different type of Array, called an ArrayList.
 
-### ArrayList
+### [](#arraylist)ArrayList
 
 Adding items to a regular array is one of its biggest downfalls. ArrayLists make this easier, they do not have a defined length like a regular Array. What does this mean? We can add stuff without creating a completely new Array.
 
@@ -346,5 +346,5 @@ $listOfObjects[1].categories[0]
 The power of processing these types of Data Sets becomes obvious once we explain [For-Each Looping]
 
 [For-Each Looping]: https://kasmichta.github.io/hjkl/docs/PowerShell/foreach.html
-[Calculated Select-Object Properties]
+[Calculated Select-Object Properties]: https://kasmichta.github.io/hjkl/docs/PowerShell/calculated-select.html
 [PSCustomObject]

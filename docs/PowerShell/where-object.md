@@ -279,7 +279,7 @@ For the quickest use of Where-Object, we can avoid using words entirely. Here's 
 Get-Service | ? {$_.Name -like "*Update*"}
 ```
 
-[PSCustomObject]
+[PSCustomObject]: https://kasmichta.github.io/hjkl/docs/PowerShell/pscustomobject.html
 [Data Structures]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html
-[$_ Variable]
+[$_ Variable]: https://kasmichta.github.io/hjkl/docs/PowerShell/psitem.html
 
