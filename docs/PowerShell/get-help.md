@@ -122,7 +122,7 @@ Rather than having to type out:
 Get-Process -Name task*
 ```
 
-### The stuff that's not in `[]`
+### [](#notOptional)The stuff that's not in `[]`
 
 Let's look at the second syntax set of `Get-Help Get-Help`
 
@@ -172,7 +172,7 @@ So `-LiteralPath` is expecting a String-type value to follow.
 If we look at the `-Credential` parameter, it's expecting `<System.Management.Automation.PSCredential>`, so if we want to supply a credential, we'll need to research how to create this type of data first.
 
 #### What if there is no type after a `-parameter`
-If you see a parameter set that has a parameter that's not followed by any data type like in the case of [[#The stuff that's not in]], the `-examples` parameter, this means the parameter is a "switch". And like a light switch, it can either be on or off. If it's not used, it's in the off state, but when you add it in it is switched on:
+If you see a parameter set that has a parameter that's not followed by any data type like in the case of [the stuff that's not in], the `-examples` parameter, this means the parameter is a "switch". And like a light switch, it can either be on or off. If it's not used, it's in the off state, but when you add it in it is switched on:
 
 Off:
 ```powershell
@@ -246,5 +246,6 @@ Or maybe the `-credential` parameter for `Get-Item`:
 ```powershell
 Get-Help Get-Item -parameter credential
 ```
-[Data Structures]
+[Data Structures]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html
+[the stuff that's not in]: https://kasmichta.github.io/hjkl/docs/PowerShell/get-help.html#notOptional
 [System.String addenum]
