@@ -8,7 +8,7 @@ nav_order: 1
 # $Variable
 All variables in PowerShell start with a `$` symbol
 
-A variable is a place to store data. It's a box with a label on it. Let's say you have a list of 400 users with their names, email addresses, job titles etc. You can just put it in a variable called `$userlist`, and then just use the variable name when you need to reference it, or perform some process with it.
+A variable is a place to store data. It's a box with a label on it. Let's say you have a list of 400 users with their names, email addresses, job titles etc. You can just put it in a variable called `$userlist`, and then just use the variable name when you need to access it, or perform some process with it.
  
 ```powershell
 #Putting something in a variable
@@ -49,7 +49,7 @@ $thisIsNothing
 
 No Output, because no thing.
 
-It is highly useful for checking if a variable is empty ([[IF Statements]]):
+It is highly useful for checking if a variable is empty ([IF Statements]):
 
 ```powershell
 Set-Variable -Name empty
@@ -67,7 +67,7 @@ if ($notempty -eq $null){
 
 # True or False
 Another pre-set couple of variables are `$true` and `$false` you cannot change these, these are used to represent a single-bit value, i.e. a 1 or 0 in memory. 
-They are called Booleans because of a guy called George Boole, more on these in [[Data Structures]].
+They are called Booleans because of a guy called George Boole, more on these in [Data Structures].
 
 ```powershell
 $Mary = @{
@@ -99,3 +99,6 @@ $variable_two = $variable_one
 $variable_two
 ```
 [Cmdlets]: https://kasmichta.github.io/hjkl/pages/PowerShell/cmdlets.html
+[IF Statements]: https://kasmichta.github.io/hjkl/pages/PowerShell/if-else.html
+[Data Structures]: https://kasmichta.github.io/hjkl/pages/PowerShell/data-structures.html
+
