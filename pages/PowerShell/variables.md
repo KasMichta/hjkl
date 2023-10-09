@@ -18,7 +18,7 @@ $variable = 50
 $variable
 ```
 
-There's a slightly longer way to do this, using [[Cmdlets]] for a declaring variables:
+There's a slightly longer way to do this, using [Cmdlets] for a declaring variables:
 
 ```powershell
 Set-Variable -Name Colour -Value "blue"
@@ -98,4 +98,4 @@ $variable_two = $variable_one
 
 $variable_two
 ```
-
+[Cmdlets]: https://kasmichta.github.io/hjkl/pages/PowerShell/cmdlets.html
