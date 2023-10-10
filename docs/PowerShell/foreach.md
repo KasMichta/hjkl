@@ -72,7 +72,7 @@ Foreach works great for writing scripts, its great strength is readability as yo
 For this purpose we use `ForEach-Object` which is used in the pipeline (below we use shorthand `ForEach`):
 
 ```powershell
-get-service -DisplayName *update* | ForEach {'Service "{0}" is {1}' -f $_.DisplayName, $_.Status}
+get-service -DisplayName *update* | ForEach-Object {'Service "{0}" is {1}' -f $_.DisplayName, $_.Status}
 ```
 
 In one line, we can perform an action for each object generated from the left side of the `|`. 
