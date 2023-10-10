@@ -32,4 +32,15 @@ $arraylist
 
 By adding `| Out-Null` we no longer get any of the results of adding items to the ArrayList, we've supressed the output.
 
+There is another way to do this that avoids the use of a pipeline which I reccomend over the above approach:
+```powershell
+$arraylist = New-Object System.Collections.ArrayList
+
+[void]$arraylist.add('a')  
+[void]$arraylist.add(2)    
+[void]$arraylist.add('iii')
+
+$arraylist
+```
+
 [arraylist]: https://kasmichta.github.io/hjkl/docs/PowerShell/data-structures.html#arraylist

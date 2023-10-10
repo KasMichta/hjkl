@@ -40,6 +40,7 @@ $PSVersiontable
 
 # Nothing
 The `$null` variable represents nothing, assigning `$null` to something will let you create a variable that does not store anything.
+This is also a fairly nuanced topic, I may have just straight up lied in the sentence before this to cut through some noise. As you gain more experience you should understand what `$null` means and how it is not truly 'nothing'.
 
 ```powershell
 $thisIsNothing = $null
@@ -56,11 +57,11 @@ Set-Variable -Name empty
 
 $notEmpty = 4
 
-if ($empty -eq $null){
+if ($null -eq $empty){
 	Write-Output '$empty is null'
 }
 
-if ($notempty -eq $null){
+if ($null -eq $notempty){
 	Write-Output '$notEmpty is null'
 }
 ```
@@ -98,6 +99,8 @@ $variable_two = $variable_one
 
 $variable_two
 ```
+Small note: this requires a little clarification, as this behaviour is only true for value types, but not [references](https://old.reddit.com/r/PowerShell/comments/16pf7y8/confused_by_how_selected_pscustomobject_works/k1r4e3s/)
+
 
 [Cmdlets]: https://kasmichta.github.io/hjkl/docs/PowerShell/cmdlets.html
 [IF Statements]: https://kasmichta.github.io/hjkl/docs/PowerShell/if-else.html

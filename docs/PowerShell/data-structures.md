@@ -54,7 +54,7 @@ This happens way more often than you would think, and for a lot of data types to
 
 ### [](#arrays)Arrays
 
-So let's get to the fun bit, what if we want a list of numbers. Easy, let's make an Array with `@()`:
+So let's get to the fun bit, what if we want a collection of numbers. Easy, let's make an Array with `@()`:
 
 ```powershell
 $array = @(1,2,3,4,5)
@@ -62,7 +62,7 @@ $array = @(1,2,3,4,5)
 $array
 ```
 
-Cool, so how do I get only the first number of the list?
+Cool, so how do I get only the first number of the collection?
 
 #### [](#indexing)Indexing
 
@@ -90,7 +90,7 @@ $array = @(1,2,3,4,5)
 $array[1,3]
 ```
 
-Okay, what if I want the last 3 numbers. If this was a long list we wouldn't want loads of numbers separated by commas. So we can use `..` to ask for a between x and y number in the index brackets:
+Okay, what if I want the last 3 numbers. If this was a long array  we wouldn't want loads of numbers separated by commas. So we can use `..` to ask for a between x and y number in the index brackets:
 
 ```powershell
 $array = @(1,2,3,4,5)
