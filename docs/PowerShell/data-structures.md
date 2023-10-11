@@ -54,10 +54,10 @@ This happens way more often than you would think, and for a lot of data types to
 
 ### [](#arrays)Arrays
 
-So let's get to the fun bit, what if we want a collection of numbers. Easy, let's make an Array with `@()`:
+So let's get to the fun bit, what if we want a collection of numbers. Easy, let's make an Array:
 
 ```powershell
-$array = @(1,2,3,4,5)
+$array = 1,2,3,4,5
 
 $array
 ```
@@ -69,7 +69,7 @@ Cool, so how do I get only the first number of the collection?
 We need to do something called **indexing** (done with `[]` after an array), like in a book, we need to know what "page" it's on...so first page:
 
 ```powershell
-$array = @(1,2,3,4,5)
+$array = 1,2,3,4,5
 
 $array[1]
 ```
@@ -77,7 +77,7 @@ $array[1]
 You might have known this was coming, like in many languages the count starts from 0 rather than 1.
 
 ```powershell
-$array = @(1,2,3,4,5)
+$array = 1,2,3,4,5
 
 $array[0]
 ```
@@ -85,7 +85,7 @@ $array[0]
 So what if I want the 2nd and 4th items. So indexes 1, and 3. We do so with a `,` in the index brackets:
 
 ```powershell
-$array = @(1,2,3,4,5)
+$array = 1,2,3,4,5
 
 $array[1,3]
 ```
@@ -93,7 +93,7 @@ $array[1,3]
 Okay, what if I want the last 3 numbers. If this was a long array  we wouldn't want loads of numbers separated by commas. So we can use `..` to ask for a between x and y number in the index brackets:
 
 ```powershell
-$array = @(1,2,3,4,5)
+$array = 1,2,3,4,5
 
 $array[2..4]
 ```
@@ -102,7 +102,7 @@ But wait a second, what if the array is very long? We won't intuitively know the
 I present to you, **negative lookup**:
 
 ```powershell
-$array = @(11, 123, 343, 123, 432, 234, 213, 123, 5434, 12, 343, 5123, 54, 1234, 542344, 34, 123, 454, 454, 548, 597, 987, 2, 547)
+$array = 11, 123, 343, 123, 432, 234, 213, 123, 5434, 12, 343, 5123, 54, 1234, 542344, 34, 123, 454, 454, 548, 597, 987, 2, 547
 
 $array[-3..-1]
 ```
@@ -111,7 +111,7 @@ Using positive numbers we go from 0, but we can look backwards with -1, and so o
 Some magic for you:
 
 ```powershell
-$array = @(11, 123, 343, 123, 432, 234, 213, 123, 5434, 12, 343, 5123, 54, 1234, 542344, 34, 123, 454, 454, 548, 597, 987, 2, 547)
+$array = 11, 123, 343, 123, 432, 234, 213, 123, 5434, 12, 343, 5123, 54, 1234, 542344, 34, 123, 454, 454, 548, 597, 987, 2, 547
 
 $array[2..-1]
 ```
@@ -123,7 +123,7 @@ That should be enough to get you started with Array indexing. What about editing
 Let's say we want to change the third value of the following array to a different value. We need the new value, and the index of the old value (in this case, 3rd item = Index 2)
 
 ```powershell
-$favouriteHobbies = @("Reading,", "Video Games,", "Tidying.")
+$favouriteHobbies = "Reading,", "Video Games,", "Tidying."
 
 "My Favourite Hobbies are: $favouriteHobbies"
 
@@ -149,7 +149,7 @@ $number
 So for Arrays:
 
 ```powershell
-$array = @("one", "two", "three")
+$array = "one", "two", "three"
 
 $array += "four"
 
@@ -195,15 +195,16 @@ Lists can contain Lists can contain Lists can con-
 ```powershell
 $Matrioszka = @(
 	@(
-		@('Matrioszka1','Matrioszka2'),
-		@('Matrioszka3','Matrioszka4')
+		'Matrioszka1','Matrioszka2',
+		'Matrioszka3','Matrioszka4'
 	),
 	@(
-		@('Matrioszka5','Matrioszka6'),
-		@('Matrioszka7','Matrioszka8')
+		'Matrioszka5','Matrioszka6',
+		'Matrioszka7','Matrioszka8'
 	)
 )
 ```
+If you're a bit confused about how I define the arrays here, I am using the syntax `@(item, item, item)`, up until now I was using the simple `item, item, item` declaration. However, in these more complicated structures it helps to enclose it in the `@()` structure to assist with indentation/readability.
 
 ### HashTables
 [Full PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-hashtable?view=powershell-7.2)
@@ -326,13 +327,13 @@ Here's how we can construct one:
 ```powershell
 $listOfObjects = [System.Collections.ArrayList]::new()
 
-$Object1 = [PSCustomObject]@{name = 'Path of Exile';categories = @('Action RPG', 'Hack and Slash', 'RPG')}
+$Object1 = [PSCustomObject]@{name = 'Path of Exile';categories = 'Action RPG', 'Hack and Slash', 'RPG'}
 
-$Object2 = [PSCustomObject]@{name = 'Elden Ring';categories = @('RPG', 'Action', 'Relaxing')}
+$Object2 = [PSCustomObject]@{name = 'Elden Ring';categories = 'RPG', 'Action', 'Relaxing'}
 
-$Object3 = [PSCustomObject]@{name = 'Insurgency: Sandstorm';categories = @('FPS', 'Realistic', 'Military')}
+$Object3 = [PSCustomObject]@{name = 'Insurgency: Sandstorm';categories = 'FPS', 'Realistic', 'Military'}
 
-$Object4 = [PSCustomObject]@{name = 'Starcraft';categories = @('RTS', 'Strategy', 'Multiplayer', 'Competitive')}
+$Object4 = [PSCustomObject]@{name = 'Starcraft';categories = 'RTS', 'Strategy', 'Multiplayer', 'Competitive'}
 
 [void]$listOfObjects.Add($Object1)
 [void]$listOfObjects.Add($Object2)

@@ -99,7 +99,7 @@ $variable_two = $variable_one
 
 $variable_two
 ```
-Small note: this requires a little clarification, as this behaviour is only true for value types, but not [references](https://old.reddit.com/r/PowerShell/comments/16pf7y8/confused_by_how_selected_pscustomobject_works/k1r4e3s/)
+Small note: this requires a little clarification, as this behaviour is only true for value types, but not [references](https://old.reddit.com/r/PowerShell/comments/16pf7y8/confused_by_how_selected_pscustomobject_works/k1r4e3s/).
 
 
 [Cmdlets]: https://kasmichta.github.io/hjkl/docs/PowerShell/cmdlets.html
